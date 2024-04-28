@@ -25,13 +25,6 @@ As I write these lines, the next question that pops up in my mind is
 - good question, let me try the latter approach and I promise to write a post-scriptum at the end, telling you how it all went and how my writing technique evolved.
 
 ---
-
-Memoires of a (Software) Product Manager
-
------
-
-by Bogdan Paun
-
 ---
 
 02. The beginnings; or about the professional journey that led me to Product Management 
@@ -62,13 +55,6 @@ I know, purists will say that's not what a PM should be doing, but in my experie
 Read on for examples and anecdotes.
 
 ---
-
-Memoires of a (Software) Product Manager
-
------
-
-by Bogdan Paun
-
 ---
 
 03. Nuances of Product management; or what this role is and what it is not
@@ -100,13 +86,6 @@ In my career I've met some product managers that lived in the world of presentat
 My point of view is that a balanced mix of all of the above is actually ideal. This will depend on where you are in the product lifecycle, how the rest of the product team is structured and a few other factors.
 
 ---
-
-Memoires of a (Software) Product Manager
-
------
-
-by Bogdan Paun
-
 ---
 
 04. Getting educated; degrees, certifications, courses etc.
@@ -126,13 +105,6 @@ How to learn before you get a job or outside of your job? Talk to PMs, play the 
 This is (or should be) a real world role, not something you should learn in a classroom. 
 
 ---
-
-Memoires of a (Software) Product Manager
-
------
-
-by Bogdan Paun
-
 ---
 
 05. The lifecycle of a product; and how it affects the PM role
@@ -155,13 +127,6 @@ but you still build new features / revenue streams / partnerships and integratio
 Phase 3 is usually not so flashy, entails less new development but lots of bug fixing.
 
 ---
-
-Memoires of a (Software) Product Manager
-
------
-
-by Bogdan Paun
-
 ---
 
 06. Working with developers, designers, testers etc.
