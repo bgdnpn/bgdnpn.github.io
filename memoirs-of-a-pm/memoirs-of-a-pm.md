@@ -25,7 +25,6 @@ As I write these lines, the next question that pops up in my mind is
 - good question, let me try the latter approach and I promise to write a post-scriptum at the end, telling you how it all went and how my writing technique evolved.
 
 ---
----
 
 02. The beginnings; or about the professional journey that led me to Product Management 
 
@@ -54,7 +53,6 @@ I know, purists will say that's not what a PM should be doing, but in my experie
 
 Read on for examples and anecdotes.
 
----
 ---
 
 03. Nuances of Product management; or what this role is and what it is not
@@ -86,7 +84,6 @@ In my career I've met some product managers that lived in the world of presentat
 My point of view is that a balanced mix of all of the above is actually ideal. This will depend on where you are in the product lifecycle, how the rest of the product team is structured and a few other factors.
 
 ---
----
 
 04. Getting educated; degrees, certifications, courses etc.
 
@@ -104,7 +101,6 @@ How to learn before you get a job or outside of your job? Talk to PMs, play the 
 
 This is (or should be) a real world role, not something you should learn in a classroom. 
 
----
 ---
 
 05. The lifecycle of a product; and how it affects the PM role
@@ -127,11 +123,29 @@ but you still build new features / revenue streams / partnerships and integratio
 Phase 3 is usually not so flashy, entails less new development but lots of bug fixing.
 
 ---
----
 
 06. Working with developers, designers, testers etc.
 
+Depending on the company context, you will be working with most other departments/roles, but here's my advice for interacting with your most important counterparts.  
 
+Stakeholders and Users: 
+These may be internal (marketing, sales, business leaders etc.) or external (partners, customers), the key part of this interaction is to listen actively, be curious, ask "why?" a lot and try to understand their motives and pain points with empathy. 
+Be candid and speak the same language as your stakeholders and you will manage to have a good relationship and build a good product together.
 
+As for your users, they are the central part of your business, the reason you're building your product. They're also your main and most important and useful stakeholder. If you know how to listen to them, read between the lines and ask good questions, they will give you more useful information than any thought leader, visionary or industry analyst.
+
+Talk to your users a lot and you will reap the benefits.
+
+Engineers, including QA/Testers: 
+One of the most important relationships you might have, engineers are usually either confused about what a PM does or upset that product managers are both putting too much pressure on them to deliver features and not listening to them when they ask for time to address technical debt and refactor code. Engineers know the inside of your product better than you and listening to them is vital for the health of your code base in terms of mitigating risks and making sure it stays maintainable and scalable.
+
+Designers:
+Even if they're hardcore software product designers, they will still have a bit of artist inside and details are very important for them. My piece of advice is to develop a common languange for discussing and understanding of what it means to be frugal when writing code. You can't always deliver the most pixel-perfect feature and that's allright, if the user experience is smooth.
+Designers are also very good research partners and usually love to help PMs with competitive and feature analysis.
+
+Sales and Marketing: 
+While sales people will usually ask your for 10 new feature per week (that they've already promissed to potentnial customers a few months ago), your marketing colleagues will be less demanding in terms of features, but will want some things to be delivered on time (for their planned launch).
+
+Whenever talking to any of the people above, remember to have patience and ask a lot of questions. They usually don't know what exactly they need or cannot express it plainly, but if you dig enough, you will reach good conclusions together.
 
 ---
