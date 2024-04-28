@@ -1,0 +1,25 @@
+
+
+Memoires of a (Software) Product Manager
+
+-----
+
+by Bogdan Paun
+
+---
+
+01. hello
+anecdote
+02. beginnings
+anecdote
+03. nuances
+anecdote
+04. courses, degrees
+anecdote
+05. lifecycle
+anecdote
+06. goodbye
+
+todo:
+- day to day
+
