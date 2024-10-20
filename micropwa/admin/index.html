@@ -16,60 +16,108 @@
   <!-- Manifest File link -->
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/micropwa/style.css">
-</head>
+  <style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    li:hover {
+        background-color: #e9e9e9;
+    }
+    .inspection-details {
+        display: none;
+        margin-top: 10px;
+    }
+</style>
 
+</head>
 <body>
 <div class="container">
 
   <h1>Admin Dashboard</h1>
 
+
   <ul>
-    <li>
-        <strong>Boat Name:</strong> Sea Voyager<br>
-        <strong>Year of Construction:</strong> 2005<br>
-        <strong>Date of Inspection:</strong> October 10, 2024<br>
-        <strong>Overall Rating:</strong> Good<br>
-        <strong>Inspector Name:</strong> John Smith<br>
-        <strong>Notes:</strong> Minor paint touch-ups required; hull in excellent condition.
+    <li onclick="toggleDetails(this)">
+        <strong>Boat Name:</strong> Sea Voyager
+        <div class="inspection-details">
+            <strong>Year of Construction:</strong> 2005<br>
+            <strong>Date of Inspection:</strong> October 10, 2024<br>
+            <strong>Overall Rating:</strong> Good<br>
+            <strong>Inspector Name:</strong> John Smith<br>
+            <strong>Notes:</strong> Minor paint touch-ups required; hull in excellent condition.
+        </div>
     </li>
-    <hr>
-    <hr>
-    <li>
-        <strong>Boat Name:</strong> Horizon Hunter<br>
-        <strong>Year of Construction:</strong> 1998<br>
-        <strong>Date of Inspection:</strong> October 2, 2024<br>
-        <strong>Overall Rating:</strong> Poor<br>
-        <strong>Inspector Name:</strong> Michael Johnson<br>
-        <strong>Notes:</strong> Significant hull damage and corrosion in rigging; not seaworthy without major repairs.
+    <li onclick="toggleDetails(this)">
+        <strong>Boat Name:</strong> Ocean Breeze
+        <div class="inspection-details">
+            <strong>Year of Construction:</strong> 2012<br>
+            <strong>Date of Inspection:</strong> September 28, 2024<br>
+            <strong>Overall Rating:</strong> Fair<br>
+            <strong>Inspector Name:</strong> Susan White<br>
+            <strong>Notes:</strong> Rigging needs attention; mechanical issues noted in the engine.
+        </div>
     </li>
-    <hr>
-    <li>
-        <strong>Boat Name:</strong> Coral Star<br>
-        <strong>Year of Construction:</strong> 2018<br>
-        <strong>Date of Inspection:</strong> October 5, 2024<br>
-        <strong>Overall Rating:</strong> Good<br>
-        <strong>Inspector Name:</strong> Emily Taylor<br>
-        <strong>Notes:</strong> Excellent mechanical condition; minor cosmetic paint issues.
+    <li onclick="toggleDetails(this)">
+        <strong>Boat Name:</strong> Horizon Hunter
+        <div class="inspection-details">
+            <strong>Year of Construction:</strong> 1998<br>
+            <strong>Date of Inspection:</strong> October 2, 2024<br>
+            <strong>Overall Rating:</strong> Poor<br>
+            <strong>Inspector Name:</strong> Michael Johnson<br>
+            <strong>Notes:</strong> Significant hull damage and corrosion in rigging; not seaworthy without major repairs.
+        </div>
     </li>
-    <hr>
-    <li>
-        <strong>Boat Name:</strong> Blue Horizon<br>
-        <strong>Year of Construction:</strong> 2010<br>
-        <strong>Date of Inspection:</strong> September 25, 2024<br>
-        <strong>Overall Rating:</strong> Fair<br>
-        <strong>Inspector Name:</strong> David Clarke<br>
-        <strong>Notes:</strong> Rigging and mechanical systems functioning, but hull shows signs of wear.
+    <li onclick="toggleDetails(this)">
+        <strong>Boat Name:</strong> Coral Star
+        <div class="inspection-details">
+            <strong>Year of Construction:</strong> 2018<br>
+            <strong>Date of Inspection:</strong> October 5, 2024<br>
+            <strong>Overall Rating:</strong> Good<br>
+            <strong>Inspector Name:</strong> Emily Taylor<br>
+            <strong>Notes:</strong> Excellent mechanical condition; minor cosmetic paint issues.
+        </div>
     </li>
-    <hr>
-    <li>
-        <strong>Boat Name:</strong> Pacific Dream<br>
-        <strong>Year of Construction:</strong> 2020<br>
-        <strong>Date of Inspection:</strong> October 12, 2024<br>
-        <strong>Overall Rating:</strong> Excellent<br>
-        <strong>Inspector Name:</strong> Sarah Martinez<br>
-        <strong>Notes:</strong> New condition, no issues found.
+    <li onclick="toggleDetails(this)">
+        <strong>Boat Name:</strong> Blue Horizon
+        <div class="inspection-details">
+            <strong>Year of Construction:</strong> 2010<br>
+            <strong>Date of Inspection:</strong> September 25, 2024<br>
+            <strong>Overall Rating:</strong> Fair<br>
+            <strong>Inspector Name:</strong> David Clarke<br>
+            <strong>Notes:</strong> Rigging and mechanical systems functioning, but hull shows signs of wear.
+        </div>
+    </li>
+    <li onclick="toggleDetails(this)">
+        <strong>Boat Name:</strong> Pacific Dream
+        <div class="inspection-details">
+            <strong>Year of Construction:</strong> 2020<br>
+            <strong>Date of Inspection:</strong> October 12, 2024<br>
+            <strong>Overall Rating:</strong> Excellent<br>
+            <strong>Inspector Name:</strong> Sarah Martinez<br>
+            <strong>Notes:</strong> New condition, no issues found.
+        </div>
     </li>
 </ul>
+<script>
+    function toggleDetails(element) {
+        const details = element.querySelector('.inspection-details');
+        if (details.style.display === 'block') {
+            details.style.display = 'none';
+        } else {
+            details.style.display = 'block';
+        }
+    }
+</script>
 
 <hr>
 
