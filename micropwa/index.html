@@ -14,8 +14,8 @@
   <meta name="theme-color" content="black">
 
   <!-- Manifest File link -->
-  <link rel="manifest" href="manifest.json">
-  <link rel="style/css" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="style/css" href="/style.css">
 </head>
 
 <body>
@@ -27,111 +27,27 @@
   <p> This is as simple as it gets, just some text. </p>
   <p> Boat inspection app prototype version 0.1. </p>
 
-  <h1>Boat Inspection Form</h1>
+  <h1>Inspector Dashboard</h1>
 
-  <!-- Boat Details Section -->
-  <fieldset>
-      <legend><strong>Boat Details</strong></legend>
-      <div class="form-group">
-          <label for="boat-name">Boat Name</label>
-          <input type="text" id="boat-name" name="boat-name" required>
-      </div>
-      <div class="form-group">
-          <label for="boat-make">Make</label>
-          <input type="text" id="boat-make" name="boat-make" required>
-      </div>
-      <div class="form-group">
-          <label for="boat-model">Model</label>
-          <input type="text" id="boat-model" name="boat-model" required>
-      </div>
-      <div class="form-group">
-          <label for="boat-length">Length (in meters)</label>
-          <input type="number" id="boat-length" name="boat-length" step="0.1" required>
-      </div>
-      <div class="form-group">
-          <label for="year-built">Year Built</label>
-          <input type="number" id="year-built" name="year-built" min="1900" max="2024" required>
-      </div>
-      <div class="form-group">
-          <label for="owner-name">Owner Name</label>
-          <input type="text" id="owner-name" name="owner-name" required>
-      </div>
-  </fieldset>
+  <p> Welcome to your dashboad, Jared! You have 3 pending tasks:</p>
+  
+  <ul>
+    <li>
+        Perform an <span>insurance inspection</span> on <span class="boat-info">"Sea Voyager"</span>, 
+        built in <span>2006</span>. Go to the <a href="/inspection/">inspection page</a>.
+    </li>
+    <li>
+        Perform an <span>insurance inspection</span> on <span class="boat-info">"Free Spirit II"</span>, 
+        built in <span>2012</span>.
+    </li>
+    <li>
+        Perform an <span>pre-purchase inspection</span> on <span class="boat-info">"Galaxy Cruiser"</span>, 
+        built in <span>2017</span>.
+    </li>
+  </ul>
 
-  <!-- Hull Inspection Section -->
-  <fieldset>
-      <legend><strong>Hull Inspection</strong></legend>
-      <div class="form-group">
-          <label for="hull-condition">Hull Condition</label>
-          <select id="hull-condition" name="hull-condition" required>
-              <option value="" disabled selected>Select condition</option>
-              <option value="Good">Good</option>
-              <option value="Fair">Fair</option>
-              <option value="Poor">Poor</option>
-          </select>
-      </div>
-      <div class="form-group">
-          <label for="hull-comments">Hull Comments</label>
-          <textarea id="hull-comments" name="hull-comments" rows="4"></textarea>
-      </div>
-  </fieldset>
+  You can now access a special online course (24 minutes long) on keel painting.
 
-  <!-- Rigging Inspection Section -->
-  <fieldset>
-      <legend><strong>Rigging Inspection</strong></legend>
-      <div class="form-group">
-          <label for="rigging-condition">Rigging Condition</label>
-          <select id="rigging-condition" name="rigging-condition" required>
-              <option value="" disabled selected>Select condition</option>
-              <option value="Good">Good</option>
-              <option value="Fair">Fair</option>
-              <option value="Poor">Poor</option>
-          </select>
-      </div>
-      <div class="form-group">
-          <label for="rigging-comments">Rigging Comments</label>
-          <textarea id="rigging-comments" name="rigging-comments" rows="4"></textarea>
-      </div>
-  </fieldset>
-
-  <!-- Paint Inspection Section -->
-  <fieldset>
-      <legend><strong>Paint Inspection</strong></legend>
-      <div class="form-group">
-          <label for="paint-condition">Paint Condition</label>
-          <select id="paint-condition" name="paint-condition" required>
-              <option value="" disabled selected>Select condition</option>
-              <option value="Good">Good</option>
-              <option value="Fair">Fair</option>
-              <option value="Poor">Poor</option>
-          </select>
-      </div>
-      <div class="form-group">
-          <label for="paint-comments">Paint Comments</label>
-          <textarea id="paint-comments" name="paint-comments" rows="4"></textarea>
-      </div>
-  </fieldset>
-
-  <!-- Mechanical Inspection Section -->
-  <fieldset>
-      <legend><strong>Mechanical Inspection</strong></legend>
-      <div class="form-group">
-          <label for="mechanical-condition">Mechanical Condition</label>
-          <select id="mechanical-condition" name="mechanical-condition" required>
-              <option value="" disabled selected>Select condition</option>
-              <option value="Good">Good</option>
-              <option value="Fair">Fair</option>
-              <option value="Poor">Poor</option>
-          </select>
-      </div>
-      <div class="form-group">
-          <label for="mechanical-comments">Mechanical Comments</label>
-          <textarea id="mechanical-comments" name="mechanical-comments" rows="4"></textarea>
-      </div>
-  </fieldset>
-
-  <!-- Submit Button -->
-  <button type="submit" class="submit-btn">Submit Inspection</button>
 </div>
 
 </body>
