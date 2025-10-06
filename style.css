@@ -44,5 +44,5 @@ strong {
 }
 
 .hide {
-  visible: none;
+  visibility: hidden;
 }
