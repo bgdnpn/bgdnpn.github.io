@@ -42,3 +42,7 @@ strong {
 .type {
   color: coral;
 }
+
+.hide {
+  visible: none;
+}
