@@ -5,7 +5,7 @@ body {
   max-width: 100%;
   margin: 0;
   box-sizing: border-box;
-  background-color: #262626;
+  background-color: #192a4b;
   color: gold;
 }
 
@@ -23,6 +23,7 @@ h1 {
 
 .second-line {
   font-style: italic;
+  color: azure;
   margin: 0;
 }
 
@@ -45,4 +46,9 @@ strong {
 
 .hide {
   visibility: hidden;
+  height: 0px;
+}
+
+hr {
+  color: azure;
 }
