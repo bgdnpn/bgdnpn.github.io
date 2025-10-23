@@ -29,13 +29,15 @@
             font-size: 2rem;
             display: block;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .descriere .contact-phone {
-            font-size: 2rem;
+            font-size: 3rem;
             color: crimson;
             display: block;
             margin-top: 20px;
+            text-align: center;
         }
 
         /* --- Gallery Grid Layout --- */
@@ -49,7 +51,6 @@
         }
 
         .gallery-item {
-            /* Responsive sizing: grow=1, shrink=1, preferred min-width=250px */
             flex: 1 1 250px; 
             max-width: 350px; 
             overflow: hidden; 
@@ -75,12 +76,12 @@
         .modal {
             display: none; 
             position: fixed; 
-            z-index: 1000; /* Ensure it's on top */
+            z-index: 1000; 
             left: 0; top: 0;
             width: 100%; height: 100%;
-            overflow: hidden; /* Important for clean display */
+            overflow: hidden; 
             background-color: rgba(0,0,0,0.9); 
-            user-select: none; /* Prevent text selection during swipe */
+            user-select: none;
         }
 
         .modal-content {
@@ -136,52 +137,24 @@
     <div class="descriere">
         <span class="status"> WORK IN PROGRESS </span>
         <p>
-De închiriat – vilă elegantă pe Bulevardul Mărășești, vis-a-vis de Engie, renovată complet cu materiale de calitate superioară. <br>
-Toate instalațiile sunt noi, izolația este realizată cu vată minerală, iar finisajele (parchet, gresie, rigips) au fost alese pentru confort și durabilitate.
-<br><br>
-Cu o suprafață utilă de aproximativ 150 mp, completată de o terasă și o curte intimă de ~90 mp, vila oferă spații luminoase, aerisite și elemente arhitecturale autentice.<br>
-Dispune de 3 băi (2 mari + 1 de serviciu) și permite compartimentări flexibile cu pereți de sticlă sau rigips.
-<br><br>
-Este alegerea ideală pentru o companie cu 10–15 angajați care dorește un sediu reprezentativ, aproape de Piața Unirii și metrou Tineretului.<br>
-<br><br>
-Chirie: 2.700 €/lună + 2 luni garanție.<br>
-Disponibilă imediat. <br>
+            Vila pe Bulevardul Marasesti, vis-a-vis de Engie, renovata complet (toate instalatiile, izolatie vata minerala, centrala noua, parchet, gresie, pereti rigips etc.) in urma cu 2 ani cu materiale de buna calitate de catre o firma specializata.
+            <br><br>
+            Suprafata utila aproximativ 160 mp + terasa + curte de ~90mp.
+            <br><br>
+            Elemente de arhitectura autentice, lumina naturala.
+            <br><br>
+            3 bai (2 mari + 1 de serviciu), camere mari, spatioase (se pot adauga pereti despartitori din rigips/sticla).
+            <br><br>
+            Ideala pentru afacere cu 10-15 angajati.
+            <br><br>
+            <b>2700 Euro, avans 2 luni</b>
         </p>
         <span class="contact-phone">Telefon 0773.953.118 </span>
         <br><br>
     </div>
 
-    <div class="gallery-container">
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (6).jpeg" data-full-src="marasesti-33 (6).jpeg" alt="Fațada Vilei Marasesti 33 - 1">
+    <div class="gallery-container" id="galleryContainer">
         </div>
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (5).jpeg" data-full-src="marasesti-33 (5).jpeg" alt="Interior Vila Marasesti 33 - 2">
-        </div>
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (4).jpeg" data-full-src="marasesti-33 (4).jpeg" alt="Interior Vila Marasesti 33 - 3">
-        </div>
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (3).jpeg" data-full-src="marasesti-33 (3).jpeg" alt="Interior Vila Marasesti 33 - 4">
-        </div>
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (2).jpeg" data-full-src="marasesti-33 (2).jpeg" alt="Interior Vila Marasesti 33 - 5">
-        </div>
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (1).jpeg" data-full-src="marasesti-33 (1).jpeg" alt="Curte Vila Marasesti 33 - 6">
-        </div>
-        
-        <div class="gallery-item">
-            <img src="marasesti-33 (7).jpeg" data-full-src="marasesti-33 (7).jpeg" alt="Detaliu arhitectural Vila Marasesti 33 - 7">
-        </div>
-        
-    </div>
 
     <div id="imageModal" class="modal">
         <span class="close">&times;</span>
@@ -190,114 +163,154 @@ Disponibilă imediat. <br>
         <img class="modal-content" id="modalImage">
     </div>
 
-    <script>
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeBtn = document.querySelector('.close');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        const galleryImages = document.querySelectorAll('.gallery-item img');
+<script>
+    const imageFiles = [
+        "m33-exterior-strada.jpg",
+        "m33-curte-interior.jpg",
+        "m33-sufr-lumina.jpg",
+        "m33-sufr-wide-lumina.jpg",
+        "m33-sufr-wide.jpg",
+        "m33-sufr-bec.jpeg",
+        "m33-sufr-dark.jpeg",
+        "m33-sala-mese.jpeg",
+        "m33-bucatarie-goala.jpeg",
+        "m33-baie-jos.jpeg",
+        "m33-scara-de-sus.jpg",
+        "m33-scara-wide.jpeg",    
+        "m33-etaj-wide.jpg",
+        "m33-etaj.jpeg",
+        "m33-etaj-lung.jpeg",
+        "m33-etaj-wide-invers.jpg",
+        "m33-camera-etaj.jpeg",
+        "m33-etaj-birou.jpeg",
+        "m33-baie-etaj.jpeg"
+    ];
+    const IMAGE_PATH_PREFIX = 'images/';
+    
+    // Element selections
+    const galleryContainer = document.getElementById('galleryContainer');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    let currentImageIndex;
+    let imageSources = [];
 
-        let currentImageIndex;
-        let imageSources = []; // Array to hold all image paths for easy navigation
-
-        // 1. Setup: Populate imageSources and add click listeners
-        galleryImages.forEach((img, index) => {
-            imageSources.push(img.getAttribute('data-full-src'));
-            img.addEventListener('click', () => openModal(index));
-        });
-
-        // 2. Navigation Functions
-        function showImage(index) {
-            // Logic to loop around (start from end or end from start)
-            if (index < 0) {
-                currentImageIndex = imageSources.length - 1;
-            } else if (index >= imageSources.length) {
-                currentImageIndex = 0;
-            } else {
-                currentImageIndex = index;
-            }
+    // --- 1. Initial Image Rendering (Populates HTML) ---
+    function renderGallery() {
+        let htmlContent = '';
+        imageFiles.forEach((filename, index) => {
+            const src = IMAGE_PATH_PREFIX + filename;
+            imageSources.push(src); // Populate the navigation array
             
-            modalImg.src = imageSources[currentImageIndex];
+            // Generate the HTML for the thumbnail
+            htmlContent += `
+                <div class="gallery-item">
+                    <img src="${src}" data-full-src="${src}" alt="Vila Marasesti Image ${index + 1}" data-index="${index}">
+                </div>
+            `;
+        });
+        galleryContainer.innerHTML = htmlContent;
+    }
+
+    // Call the render function to build the gallery
+    renderGallery();
+
+    // --- 2. Modal Logic Setup (Must run AFTER renderGallery) ---
+    const renderedImages = document.querySelectorAll('.gallery-item img');
+
+    function showImage(index) {
+        // Logic to loop around (wraps from last to first and vice-versa)
+        if (index < 0) {
+            currentImageIndex = imageSources.length - 1;
+        } else if (index >= imageSources.length) {
+            currentImageIndex = 0;
+        } else {
+            currentImageIndex = index;
         }
+        modalImg.src = imageSources[currentImageIndex];
+    }
 
-        function openModal(index) {
-            modal.style.display = "block";
-            showImage(index);
+    function openModal(index) {
+        modal.style.display = "block";
+        showImage(index);
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Add click listener to every thumbnail
+    renderedImages.forEach(img => {
+        img.addEventListener('click', (e) => {
+            // Get the image index from the data-index attribute
+            const index = parseInt(e.target.getAttribute('data-index'));
+            openModal(index);
+        });
+    });
+
+    // --- 3. Event Handlers (Navigation and Close) ---
+    closeBtn.onclick = closeModal;
+    prevBtn.onclick = () => showImage(currentImageIndex - 1);
+    nextBtn.onclick = () => showImage(currentImageIndex + 1);
+
+    // Click outside image to close modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeModal();
         }
+    }
 
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        // 3. Event Handlers (Buttons and Background)
-        closeBtn.onclick = closeModal;
-        prevBtn.onclick = () => showImage(currentImageIndex - 1);
-        nextBtn.onclick = () => showImage(currentImageIndex + 1);
-
-        // Click outside image to close
-        window.onclick = function(event) {
-            if (event.target == modal) {
+    // 4. Keyboard Navigation (Arrows and Escape)
+    document.addEventListener('keydown', function(e) {
+        if (modal.style.display === "block") {
+            if (e.key === "ArrowLeft") {
+                showImage(currentImageIndex - 1);
+            } else if (e.key === "ArrowRight") {
+                showImage(currentImageIndex + 1);
+            } else if (e.key === "Escape") {
                 closeModal();
             }
         }
+    });
 
-        // 4. Keyboard Navigation
-        document.addEventListener('keydown', function(e) {
-            if (modal.style.display === "block") {
-                if (e.key === "ArrowLeft") {
-                    showImage(currentImageIndex - 1);
-                } else if (e.key === "ArrowRight") {
-                    showImage(currentImageIndex + 1);
-                } else if (e.key === "Escape") {
-                    closeModal();
-                }
-            }
-        });
+    // 5. Touch/Swipe Navigation
+    let touchstartX = 0;
+    let touchendX = 0;
+    const SWIPE_THRESHOLD = 50; 
 
-        // 5. Touch/Swipe Navigation
-        let touchstartX = 0;
-        let touchendX = 0;
-        const SWIPE_THRESHOLD = 50; // Minimum distance in pixels for a swipe to register
+    modalImg.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX;
+    });
 
-        modalImg.addEventListener('touchstart', e => {
-            touchstartX = e.changedTouches[0].screenX;
-        });
+    modalImg.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX;
+        handleGesture();
+    });
 
-        modalImg.addEventListener('touchend', e => {
-            touchendX = e.changedTouches[0].screenX;
-            handleGesture();
-        });
-
-        // Prevent vertical scrolling while swiping horizontally on the image
-        modalImg.addEventListener('touchmove', e => {
-             // Check if we are mostly swiping horizontally
-             const deltaX = Math.abs(e.changedTouches[0].screenX - touchstartX);
-             const deltaY = Math.abs(e.changedTouches[0].screenY - e.changedTouches[0].screenY); // Simple way to get the Y movement, but usually not needed if only X is checked
-             
-             // Prevent default only if horizontal movement is significant (optional but helpful)
-             if (deltaX > 5 && deltaX > deltaY) {
-                 e.preventDefault(); 
-             }
-        }, { passive: false });
-
-
-        function handleGesture() {
-            const distance = touchendX - touchstartX;
-
-            if (distance > SWIPE_THRESHOLD) {
-                // Right swipe (move to previous image)
-                showImage(currentImageIndex - 1);
-            } else if (distance < -SWIPE_THRESHOLD) {
-                // Left swipe (move to next image)
-                showImage(currentImageIndex + 1);
-            }
-            // Reset points
-            touchstartX = 0;
-            touchendX = 0;
+    // Prevents accidental scrolling when swiping horizontally
+    modalImg.addEventListener('touchmove', e => {
+        const deltaX = Math.abs(e.changedTouches[0].screenX - touchstartX);
+        if (deltaX > 5) {
+             e.preventDefault(); 
         }
-        
-    </script>
+    }, { passive: false });
+
+
+    function handleGesture() {
+        const distance = touchendX - touchstartX;
+
+        if (distance > SWIPE_THRESHOLD) {
+            showImage(currentImageIndex - 1); // Right swipe -> Previous image
+        } else if (distance < -SWIPE_THRESHOLD) {
+            showImage(currentImageIndex + 1); // Left swipe -> Next image
+        }
+        touchstartX = 0;
+        touchendX = 0;
+    }
+</script>
 
 </body>
 </html>
